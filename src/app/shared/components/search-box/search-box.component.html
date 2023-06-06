@@ -1,0 +1,12 @@
+<!-- esta linea la utilizamos dentro del intput  para utilizar el eveto
+cunado demos enter envie al metodo -->
+<!-- (keyup.enter)="searchTag()" -->
+<input
+  type="text"
+  [placeholder]="placeholder"
+  class="form-control"
+  [value]="initialValue"
+  #txtTagInput
+  (keyup)="onKeyPress(txtTagInput.value)"
+
+>
